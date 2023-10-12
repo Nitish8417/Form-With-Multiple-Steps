@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+</head>
+
+<body>
+    <section class="multi-step-form">
+        <div class="text-info-reg">
+            <h2 id="heading">Registration Form</h2>
+            <p>Register your member Account</p>
+        </div>
+
+        <div class="steps">
+            <button class="active" type="button" disabled>Step 1</button>
+            <button type="button" disabled>Step 2</button>
+            <button type="button" disabled>Step 3</button>
+            <button type="button" disabled>Step 4</button>
+            <button type="button" disabled>Step 5
+            </button>
+           
+        </div>
+
+        <form action="#" method="post">
+            <fieldset aria-label="Step One" id="step-1">
+                <legend>Step One</legend>
+
+                <div class="first-fild-data">
+                    <h2 class="fs-title">Personal Details:</h2>
+                    <p>(Please state your name as stated in your Birth Certificate)</p>
+                    <div class="sub-fild-data">
+                        <div class="text-fild-data">
+                            <label for="first-name">First Name</label>
+                            <input class="form-control" type="text" name="first-name" id="first-name" required>
+                        </div>
+                        <div class="text-fild-data">
+                            <label for="last-name">Last Name</label>
+                            <input class="form-control" type="text" name="last-name" id="last-name" required>
+                        </div>
+                    </div>
+                    <div class="sub-fild-data">
+                        <div class="text-fild-data">
+                            <label class="control-label">Member Since</label>
+                            <input type="date" required="required" class="form-control" placeholder="Member Since"
+                                data-input="date_of_birth" />
+                        </div>
+
+                        <div class="text-fild-data">
+                            <label class="control-label">Please select</label>
+                            <select class="form-control" required="required">
+                                <option value="">Please select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="btn-next-priv">
+                    <button class="btn btn-default btn-next" type="button" aria-controls="step-2">Next</button>
+                </div>
+            </fieldset>
+
+            <fieldset aria-label="Step Two" id="step-2">
+                <legend>Step Two</legend>
+                <div class="first-fild-data">
+                    <h2>Cross Credit from other accounting institution</h2>
+                    <div class="sub-fild-data">
+                        <div class="text-fild-data">
+                            <label class="control-label">Institute Name*</label>
+                            <select class="form-control" required="required">
+                                <option value="">Please select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="text-fild-data">
+                            <label class="control-label">Category of Membership with institute*</label>
+                            <select class="form-control" required="required">
+                                <option value="">Please select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-next-priv">
+                    <button class="btn btn-default btn-prev" type="button" aria-controls="step-1">Previous</button>
+                    <button class="btn btn-default btn-next" type="button" aria-controls="step-3">Next</button>
+                </div>
+
+
+            </fieldset>
+
+           
+
+            <fieldset aria-label="Step 3" id="step-3">
+                <legend>Step 3</legend>
+                <div class="first-fild-data">
+                     <div class="sub-fild-data">
+                        <div class="text-fild-data">
+                            <label class="control-label">Select University</label>
+                            <select class="form-control" required="required">
+                                <option value="">Please select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="text-fild-data">
+                            <label class="control-label">Course</label>
+                            <select class="form-control" required="required">
+                                <option value="">Please select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="checkbox-data-item">
+                        <p>Other University - Overseas</p>
+                        <div>
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <label for="vehicle1">Yes</label>
+                        </div>
+                        
+                    </div>
+                    <p>If you have studied in any university outside Fiji, please get your transcript
+                        assessed with USP. Upon receipt of assessment please go back to Step 3 and select
+                        USP and enter the relevant fields. You also need to attach your transcript in step
+                        5.</p>
+
+                    <div class="checkbox-data-item">
+                        <input type="checkbox" id="vehicle2" name="vehicle1" value="Bike">
+                        <label for="vehicle2">AF439 Advance Issue in Contemporary Taxation</label>
+                    </div>
+                    <p>Other subjects offered by this institution that may be recognised for exemption
+                        Select any other subjects you have completed</p>
+                        <hr>
+                        <div class="checkbox-data-items">
+                            <div>
+                                <input type="checkbox" id="data1" name="vehicle1" value="Bike">
+                                <label for="data1">AF101 Introduction to Accounting & Financial Management
+                                    1</label><br>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="data2" name="vehicle1" value="Bike">
+                                <label for="data2"> AF102 Introduction to Accounting & Financial Management
+                                    2</label><br>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="data3" name="vehicle1" value="Bike">
+                                <label for="data3"> AF108 Introduction to Law for Commerce</label><br>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="data4" name="vehicle1" value="Bike">
+                                <label for="data4"> AF201 Managerial Accounting</label><br>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="data5" name="vehicle1" value="Bike">
+                                <label for="data5"> AF205 Law of Associations</label><br>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="data6" name="vehicle1" value="Bike">
+                                <label for="data6">AF208 Financial Management</label><br>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="data7" name="vehicle1" value="Bike">
+                                <label for="data7"> AF210 Financial Accountig</label><br>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="data8" name="vehicle1" value="Bike">
+                                <label for="data8"> AF301 Accounting Theory and Application</label><br>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="data9" name="vehicle1" value="Bike">
+                                <label for="data9"> AF302 Information Systems</label><br>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="data10" name="vehicle1" value="Bike">
+                                <label for="data10"> AF304 Auditing</label><br>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="data11" name="vehicle1" value="Bike">
+                                <label for="data11">AF308 Taxation Law</label><br>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="data12" name="vehicle1" value="Bike">
+                                <label for="data12">AF314 Corporate Accounting</label><br>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="data13" name="vehicle1" value="Bike">
+                                <label for="data13"> EC101 Macroeeconomics</label><br>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="data14" name="vehicle1" value="Bike">
+                                <label for="data14">AF314 Corporate Accounting</label><br>
+                            </div>
+
+
+                        </div>
+                </div>
+                <div class="btn-next-priv">
+                    <button class="btn btn-default btn-prev" type="button" aria-controls="step-2">Previous</button>
+                    <button class="btn btn-default btn-next" type="button" aria-controls="step-4">Next</button>
+                </div>
+            </fieldset>
+
+            <fieldset role="radiogroup" aria-label="Step Four" aria-describedby="co-borrower-error" id="step-4">
+                <legend>Step Four</legend>
+                <div class="first-fild-data">
+                    <h2>- Reference</h2>
+                    <div class="first-reference">                        
+                        <input type="text" placeholder="Name:">
+                        <input type="text" placeholder="Organisation:">
+                        <input type="text" placeholder="Position:">
+                        <input type="tel" name="tel" id="phpne" placeholder="Contact Detail:">
+                        <input type="email" name="email" id="email" placeholder="Email:">
+                    </div>
+                    <h2>Second Reference</h2>
+                    <div class="sec-reference">
+                       
+                        <input type="text" placeholder="Name:">
+                        <input type="text" placeholder="Organisation:">
+                        <input type="text" placeholder="Position:">
+                        <input type="tel" name="tel" id="phpne" placeholder="Contact Detail:">
+                        <input type="email" name="email" id="email" placeholder="Email:">
+                    </div>
+                    <h2>Third Reference</h2>
+                    <div class="third-reference">
+                        
+                        <input type="text" placeholder="Name:">
+                        <input type="text" placeholder="Organisation:">
+                        <input type="text" placeholder="Position:">
+                        <input type="tel" name="tel" id="phpne" placeholder="Contact Detail:">
+                        <input type="email" name="email" id="email" placeholder="Email:">
+                    </div>
+                    <h2>Reference File Uploads</h2>
+                    <div class="input-upload">
+                        
+                        <div class="upload-file">
+                            <label for="Upload Transcripts">Upload Transcripts:</label>
+                            <input type="file" name="resume" id="resume" accept=".pdf, .doc, .docx">
+                        </div>
+                        <div class="upload-file">
+                            <label for="Upload Transcripts">Upload Transcripts:</label>
+                            <input type="file" name="resume" id="resume" accept=".pdf, .doc, .docx">
+                        </div>
+                        <div class="upload-file">
+                            <label for="Upload Transcripts">Upload Transcripts:</label>
+                            <input type="file" name="resume" id="resume" accept=".pdf, .doc, .docx">
+                        </div>
+                        <div class="upload-file">
+                            <label for="Upload Transcripts">Upload Transcripts:</label>
+                            <input type="file" name="resume" id="resume" accept=".pdf, .doc, .docx">
+                        </div>
+                        <div class="upload-file">
+                            <label for="Upload Transcripts">Upload Transcripts:</label>
+                            <input type="file" name="resume" id="resume" accept=".pdf, .doc, .docx">
+                        </div>
+                        <div class="upload-file">
+                            <label for="Upload Transcripts">Upload Transcripts:</label>
+                            <input type="file" name="resume" id="resume" accept=".pdf, .doc, .docx">
+                        </div>
+
+                    </div>
+
+                </div>
+            
+                <div class="btn-next-priv">
+                    <button class="btn btn-default btn-prev" type="button" aria-controls="step-2">Previous</button>
+                    <button class="btn btn-default btn-next" type="button" aria-controls="step-4">Next</button>
+                </div>
+            </fieldset>
+
+            <fieldset aria-label="Step Five" id="step-5">
+                <legend>Step Four</legend>
+                <p>
+                    <label for="message"></label>
+                    <textarea class="form-control" rows="3" name="message" id="message" required></textarea>
+                </p>
+                <p>
+                    <button class="btn btn-success" type="submit">Submit</button>
+                    <!-- <button class="btn btn-default btn-edit" type="button">Edit</button>
+                    <button class="btn btn-danger" type="reset">Start Over</button> -->
+                </p>
+            </fieldset>
+
+        </form>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>

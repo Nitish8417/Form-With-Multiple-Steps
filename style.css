@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{    
+    max-width: 100% !important;
+}
+
+.text-info-reg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.no-js .multi-step-form fieldset button,
+.no-js .multi-step-form h2,
+.multi-step-form.edit-form fieldset button,
+.multi-step-form.edit-form h2 {
+    display: none !important;
+}
+
+.no-js .multi-step-form fieldset,
+.multi-step-form.edit-form fieldset {
+    display: block !important;
+}
+
+.no-js .multi-step-form [type=submit],
+.no-js .multi-step-form [type=reset],
+.multi-step-form.edit-form [type=submit],
+.multi-step-form.edit-form [type=reset] {
+    display: inline-block !important;
+}
+
+.no-js .multi-step-form .steps,
+.multi-step-form.edit-form .steps {
+    display: none;
+}
+
+.multi-step-form fieldset {
+    display: none;
+    padding: 25px;
+    margin: 0;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+
+.multi-step-form fieldset:first-of-type {
+    display: block;
+    padding: 25px;
+    margin: 0;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.multi-step-form fieldset.hidden {
+    display: none;
+}
+
+.multi-step-form fieldset.visible {
+    display: block;
+}
+
+.multi-step-form .steps button {
+    border: 0;
+}
+
+.multi-step-form .steps [disabled] {
+    background: #66D7FA;
+    max-width: 100%;
+    margin: 0;
+    padding: 15px 20px;
+    min-width: inherit;
+    display: table-cell;
+}
+
+.multi-step-form .steps .active {
+    max-width: 100%;
+    margin: 0;
+    padding: 15px 20px;
+    min-width: inherit;
+    display: table-cell;
+    background: #0C7CD5;
+    color: #fff;
+}
+
+
+.error-text {
+    color: red;
+}
+
+
+label .optional {
+    font-weight: normal;
+    font-size: 90%;
+}
+
+section.multi-step-form {
+    width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 3px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.steps {
+    padding: 20px 0;
+    text-align: center;
+}
+
+/*  */
+
+.first-fild-data {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+.sub-fild-data {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+.first-fild-data .text-fild-data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    position: relative;
+}
+.text-fild-data input{
+    height: 40px;
+    padding: 0 0px;
+    position: relative;
+    border: 0px;
+    border-bottom: 1px solid !important;
+}
+select.form-control {
+    height: 44px;
+    padding: 0 0px;
+    border: 0px;
+    border-bottom: 1px solid !important;
+}
+.btn-next-priv {
+    float: right;
+   
+}
+.btn-prev,.btn-next{
+    width: 200px;
+    height: 40px;
+    background-color: blueviolet;
+    border: 1px solid;
+    color: #fff;
+    cursor: pointer;
+}
+.text-fild-data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+.first-reference,.sec-reference,.third-reference {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+.first-reference input,.sec-reference input,.third-reference input{
+    height: 40px;
+    padding: 0 0px;
+    position: relative;
+    border: 0px;
+    border-bottom: 1px solid !important;
+}
+.upload-file {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.input-upload {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
